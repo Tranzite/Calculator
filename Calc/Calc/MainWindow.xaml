@@ -5,8 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Calc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculator" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="resultWindow" Grid.Row="1" Grid.Column="1" FontSize="45" Grid.ColumnSpan="4" HorizontalContentAlignment="Left" Background="LightGreen"/>
+
+        <Button x:Name="squareRoot" Grid.Row="2" Grid.Column="1" Content="√" FontSize="45" Click="squareRoot_Click"/>
+        <Button x:Name="btnProcent" Grid.Row="2" Grid.Column="2" Content="x^2" FontSize="45" Click="PowerTo_Click"/>
+        <Button x:Name="btnPlusOrMinus" Grid.Row="2" Grid.Column="3" Content="" FontSize="45"/>
+        <Button x:Name="btnClear" Grid.Row="2" Grid.Column="4" Content="CE" FontSize="45" Click="btnClear_Click"/>
+
+        <Button x:Name="btn7" Grid.Row="3" Grid.Column="1" Content="7" FontSize="45" Click="btn7_Click"/>
+        <Button x:Name="btn8" Grid.Row="3" Grid.Column="2" Content="8" FontSize="45" Click="btn8_Click"/>
+        <Button x:Name="btn9" Grid.Row="3" Grid.Column="3" Content="9" FontSize="45" Click="btn9_Click"/>
+        <Button x:Name="btnDivision" Grid.Row="3" Grid.Column="4" Content="÷" FontSize="45" Click="btnDivision_Click"/>
+
+        <Button x:Name="btn4" Grid.Row="4" Grid.Column="1" Content="4" FontSize="45" Click="btn4_Click"/>
+        <Button x:Name="btn5" Grid.Row="4" Grid.Column="2" Content="5" FontSize="45" Click="btn5_Click"/>
+        <Button x:Name="btn6" Grid.Row="4" Grid.Column="3" Content="6" FontSize="45" Click="btn6_Click"/>
+        <Button x:Name="btnMultiplication" Grid.Row="4" Grid.Column="4" Content="x" FontSize="45" Click="btnMultiplication_Click"/>
+
+        <Button x:Name="btn1" Grid.Row="5" Grid.Column="1" Content="1" FontSize="45" Click="btn1_Click"/>
+        <Button x:Name="btn2" Grid.Row="5" Grid.Column="2" Content="2" FontSize="45" Click="btn2_Click"/>
+        <Button x:Name="btn3" Grid.Row="5" Grid.Column="3" Content="3" FontSize="45" Click="btn3_Click"/>
+        <Button x:Name="btnMinus" Grid.Row="5" Grid.Column="4" Content="-" FontSize="45" Click="btnMinus_Click"/>
+
+        <Button x:Name="btn0" Grid.Row="6" Grid.Column="1" Content="0" FontSize="45" Click="btn0_Click"/>
+        <Button x:Name="btnComma" Grid.Row="6" Grid.Column="2" Content="." FontSize="45"/>
+        <Button x:Name="btnCalculate" Grid.Row="6" Grid.Column="3" Content="=" FontSize="45" Click="btnCalculate_Click"/>
+        <Button x:Name="btnPlus" Grid.Row="6" Grid.Column="4" Content="+" FontSize="45" Click="btnPlus_Click"/>
 
     </Grid>
 </Window>
